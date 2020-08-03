@@ -16,5 +16,7 @@ public class Wrappers {
 		
 		System.out.println(BL);
 		System.out.println(B.toString());
+		
+		System.out.println(S + I + L + C + F + D);
 	}
 }

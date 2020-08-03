@@ -7,5 +7,7 @@ public class ConversaoTipoPrimitivoNumerico {
 		
 		int c = 4;
 		byte b = (byte) c;
+		
+		System.out.println(b + c + d + f);
 	}
 }
