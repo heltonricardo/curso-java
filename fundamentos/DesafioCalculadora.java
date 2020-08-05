@@ -11,8 +11,11 @@ public class DesafioCalculadora {
 		double a, b, r;
 		char op;
 		
+		System.out.print("Valor para A ..: ");
 		a = e.nextDouble();
+		System.out.print("Valor para B ..: ");
 		b = e.nextDouble();
+		System.out.print("Operação ......: ");
 		op = e.next().charAt(0);
 		
 		r = 0;
@@ -22,7 +25,7 @@ public class DesafioCalculadora {
 		r = op == '/' ? a / b : r;
 		r = op == '%' ? a % b : r;
 		
-		System.out.println("Resposta: " + r);
+		System.out.println("\nResposta: " + r);
 		e.close();
 	}
 }
