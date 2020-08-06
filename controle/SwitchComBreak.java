@@ -33,5 +33,6 @@ public class SwitchComBreak {
 		}
 		
 		System.out.println("Conceito: " + conceito);
+		e.close();
 	}
 }
