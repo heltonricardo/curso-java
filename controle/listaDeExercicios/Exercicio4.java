@@ -10,7 +10,6 @@ public class Exercicio4 {
 		Scanner e = new Scanner(System.in);
 		long n = e.nextLong();
 		
-		
 		if (n != 2 && n % 2 == 0 || n == 1)
 			primo = false;
 		else for (long i = 3, raiz = (long) Math.sqrt(n); primo && i < raiz; i += 2)
