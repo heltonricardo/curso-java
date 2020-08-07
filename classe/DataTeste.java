@@ -4,12 +4,8 @@ public class DataTeste {
 
 	public static void main(String[] args) {
 		
-		Data nasci = new Data();
+		Data nasci = new Data(13, 1, 1995);
 		Data atual = new Data();
-		
-		nasci.dia = 13;
-		nasci.mes = 1;
-		nasci.ano = 1995;
 		
 		atual.dia = 7;
 		atual.mes = 8;
