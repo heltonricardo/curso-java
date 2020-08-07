@@ -15,8 +15,8 @@ public class DataTeste {
 		atual.mes = 8;
 		atual.ano = 2020;
 		
-		System.out.printf("Data atual: %02d/%02d/%04d", atual.dia, atual.mes, atual.ano);
+		System.out.printf("Data atual: " + atual.dataFormatada());
 		System.out.println();
-		System.out.printf("Data de nascimento: %02d/%02d/%04d", nasci.dia, nasci.mes, nasci.ano);
+		System.out.printf("Data de nascimento: " + nasci.dataFormatada());
 	}
 }
