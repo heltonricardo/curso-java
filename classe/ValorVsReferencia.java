@@ -12,6 +12,10 @@ public class ValorVsReferencia {
 		--b;
 		System.out.printf("A: %d e B: %d\n\n", a, b);
 		
+		alteraPrimitivo(a);
+		System.out.printf("A: %d e B: %d\n\n", a, b);
+		
+		
 		Data d1 = new Data(8, 8, 2020);
 		Data d2 = d1; // Atribuição por referência (objeto)
 		
@@ -30,10 +34,18 @@ public class ValorVsReferencia {
 		System.out.println("D2: " + d2.dataFormatada());
 	}
 	
+	// Passagem por valor
+	static void alteraPrimitivo(int x) {
+		
+		x++;
+	}
+	
+	// Passagem por referência
 	static void dataPadrao(Data d) {
 		
 		d.dia = 1;
 		d.mes = 1;
 		d.ano = 1970;
 	}
+	
 }
