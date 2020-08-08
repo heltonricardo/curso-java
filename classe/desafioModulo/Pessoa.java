@@ -15,11 +15,16 @@ public class Pessoa {
 	}
 	
 	String dados() {
-		return this.nome + " tem  " + this.peso + " Kg.";
+		return this.nome + " tem " + this.peso + " Kg.";
 	}
 	
 	String comer(Comida comida) {
-		this.peso += comida.peso;
-		return comida.nome;
+		
+		if (comida != null) {
+			this.peso += comida.peso;
+			return comida.nome;
+		}
+		
+		return "nada";
 	}
 }
