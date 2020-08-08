@@ -7,13 +7,14 @@ public class Data {
 	int ano;
 	
 	Data() {
-		dia = 1;
-		mes = 1;
-		ano = 1970;
+		// this.dia = 1;
+		// this.mes = 1;
+		// this.ano = 1970;
+		this(1, 1, 1970); // this() para chamar outro construtor
 	}
 	
 	Data(int dia, int mes, int ano) {
-		this.dia = dia;
+		this.dia = dia; // this. para acessar membros estáticos (pertencentes à classe)
 		this.mes = mes;
 		this.ano = ano;
 	}
