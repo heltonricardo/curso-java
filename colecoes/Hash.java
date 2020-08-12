@@ -12,6 +12,8 @@ public class Hash {
 		usuarios.add(new Usuario("Ana"));
 		usuarios.add(new Usuario("Guilherme"));
 		
+		
+		// Para o equals funcionar, o hashCode deve ser implementado
 		boolean result = usuarios.contains(new Usuario("Ana"));
 		
 		System.out.println(result);
