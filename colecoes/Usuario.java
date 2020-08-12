@@ -11,8 +11,6 @@ public class Usuario {
 	public String toString() {
 		return "Meu nome é " + this.nome + ".";
 	}
-	
-	
 
 	@Override
 	public int hashCode() {
