@@ -5,9 +5,9 @@ public class Item {
 	int quantidade;
 	Produto produto;
 	
-	Item(int quantidade, Produto produto) {
+	Item(int quantidade, String nome, double preco) {
 		this.quantidade = quantidade;
-		this.produto = produto;
+		this.produto = new Produto(nome, preco);
 	}
 	
 	public String toString() {
