@@ -14,8 +14,8 @@ public class Compra {
 		return soma;
 	}
 
-	void adicionarItem(Item item) {
-		this.lista.add(item);
+	void adicionarItem(int quantidade, String nome, double preco) {
+		this.lista.add(new Item(quantidade, nome, preco));
 	}
 	
 	void exibir() {
