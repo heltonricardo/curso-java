@@ -8,7 +8,25 @@ public class Cliente {
 	String nome;
 	List<Compra> lista = new ArrayList<Compra>();
 	
+	Cliente(String nome) {
+		this.nome = nome;
+	}
+	
+	void comprar(Compra compra) {
+		this.lista.add(compra);
+	}
+	
 	double obterValorTotal() {
-		return 0;
+		double soma = 0;
+		for (Compra compra: lista)
+			soma += compra.obterValorTotal();
+		return soma;
+	}
+	
+	void exibir() {
+		for (Compra compra: lista) {
+			compra.exibir();
+			System.out.println();
+		}
 	}
 }
