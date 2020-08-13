@@ -23,7 +23,7 @@ public class Cliente {
 		return soma;
 	}
 	
-	void exibir() {
+	void exibirCompras() {
 		for (Compra compra: lista) {
 			compra.exibir();
 			System.out.println();
