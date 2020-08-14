@@ -11,11 +11,9 @@ public class CarroTeste {
 		System.out.println("LaFerrari: " + laFerrari.velocidadeAtual + " km/h.");
 		System.out.println();
 		
-		for (int i = 0; i < 6; i++) {			
-			fusca.acelerar();
-			laFerrari.acelerar();
-		}
-		
+		fusca.acelerar();
+		laFerrari.acelerar();
+	
 		System.out.println("Fusca:     " + fusca.velocidadeAtual + " km/h.");
 		System.out.println("LaFerrari: " + laFerrari.velocidadeAtual + " km/h.");
 		System.out.println();
@@ -27,10 +25,15 @@ public class CarroTeste {
 		System.out.println("LaFerrari: " + laFerrari.velocidadeAtual + " km/h.");
 		System.out.println();
 		
-		for (int i = 0; i < 10; i++) {			
-			fusca.frear();
-			laFerrari.frear();
-		}
+		fusca.frear();
+		laFerrari.frear();
+		
+		System.out.println("Fusca:     " + fusca.velocidadeAtual + " km/h.");
+		System.out.println("LaFerrari: " + laFerrari.velocidadeAtual + " km/h.");
+		System.out.println();
+
+		fusca.frear();
+		laFerrari.frear();
 		
 		System.out.println("Fusca:     " + fusca.velocidadeAtual + " km/h.");
 		System.out.println("LaFerrari: " + laFerrari.velocidadeAtual + " km/h.");

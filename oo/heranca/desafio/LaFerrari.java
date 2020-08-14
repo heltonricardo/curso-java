@@ -2,19 +2,13 @@ package oo.heranca.desafio;
 
 public class LaFerrari extends Carro {
 
+	@Override
 	void acelerar() {
-		super.acelerar();
-		super.acelerar();
-		super.acelerar();
-		super.acelerar();
-		super.acelerar();
+		this.velocidadeAtual = Math.min(this.velocidadeAtual + 80, 150);
 	}
 	
+	@Override
 	void frear() {
-		super.frear();
-		super.frear();
-		super.frear();
-		super.frear();
-		super.frear();
+		this.velocidadeAtual = Math.max(this.velocidadeAtual - 80, 0);
 	}
 }
