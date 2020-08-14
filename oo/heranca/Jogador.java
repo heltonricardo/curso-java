@@ -14,7 +14,6 @@ public class Jogador {
 			oponente.vida -= 10;
 			return true;
 		}
-		
 		return false;
 	}
 	
