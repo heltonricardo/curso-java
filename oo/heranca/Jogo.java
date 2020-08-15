@@ -4,15 +4,11 @@ public class Jogo {
 
 	public static void main(String[] args) {
 		
-		Heroi heroi = new Heroi();
-		// Ou: Jogador j2 = new Heroi();
-		heroi.x = 10;
-		heroi.y = 10;
+		Heroi heroi = new Heroi(10, 10);
+		// Ou: Jogador j2 = new Heroi(10, 10);
 
-		Jogador monstro = new Monstro();
-		// Ou: Monstro j1 = new Monstro();
-		monstro.x = 11;
-		monstro.y = 11;
+		Jogador monstro = new Monstro(11, 11);
+		// Ou: Monstro j1 = new Monstro(11, 11);
 		
 		System.out.println("Heroi:   " + heroi.x + " " + heroi.y + " " + heroi.vida);
 		System.out.println("Monstro: " + monstro.x + " " + monstro.y + " " + monstro.vida);
