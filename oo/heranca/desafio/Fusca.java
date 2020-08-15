@@ -1,14 +1,15 @@
 package oo.heranca.desafio;
 
 public class Fusca extends Carro {
-
-	@Override
-	void acelerar() {
-		this.velocidadeAtual = Math.min(this.velocidadeAtual + 10, 150);
+	
+	final int delta = 10;
+	
+	Fusca() {
+		this(80);
 	}
 	
-	@Override
-	void frear() {
-		this.velocidadeAtual = Math.max(this.velocidadeAtual - 10, 0);
+	Fusca(int velocidadeMaxima) {
+		super(velocidadeMaxima);
+		super.delta = this.delta;
 	}
 }
