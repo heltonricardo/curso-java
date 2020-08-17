@@ -2,11 +2,12 @@ package oo.heranca.desafio;
 
 public class Carro {
 
-	final int VELOCIDADE_MAXIMA;
-	public int velocidadeAtual;
-	public int delta = 5;
+	private final int VELOCIDADE_MAXIMA;
+	private int velocidadeAtual;
+	protected int delta = 5;
 	
-	public Carro(int velocidadeMaxima) {
+	// O construtor do carro pode ter visibilidade package ou protected
+	protected Carro(int velocidadeMaxima) {
 		VELOCIDADE_MAXIMA = velocidadeMaxima;
 	}
 	
@@ -16,5 +17,9 @@ public class Carro {
 	
 	public void frear() {
 		this.velocidadeAtual = Math.max(this.velocidadeAtual - delta, 0);
+	}
+	
+	public String toString() {
+		return Integer.toString(velocidadeAtual);
 	}
 }
