@@ -10,7 +10,7 @@ public class Jogador {
 		this.y = y;
 	}
 	
-	public boolean atacar(Jogador oponente) {
+	protected boolean atacar(Jogador oponente) {
 		
 		int deltaX = Math.abs(this.x - oponente.x);
 		int deltaY = Math.abs(this.y - oponente.y);
@@ -22,7 +22,7 @@ public class Jogador {
 		return false;
 	}
 	
-	public boolean andar(Direcao direcao) {
+	protected boolean andar(Direcao direcao) {
 		switch (direcao) {
 			case NORTE: --this.y; break;
 			case SUL:   ++this.y; break;
