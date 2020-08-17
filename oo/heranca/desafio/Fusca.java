@@ -2,7 +2,7 @@ package oo.heranca.desafio;
 
 public class Fusca extends Carro {
 	
-	final int delta = 10;
+	private final int delta = 10;
 	
 	public Fusca() {
 		this(80);
