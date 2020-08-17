@@ -2,7 +2,6 @@ package oo.heranca.teste;
 
 import oo.heranca.Direcao;
 import oo.heranca.Heroi;
-import oo.heranca.Jogador;
 import oo.heranca.Monstro;
 
 public class Jogo {
@@ -10,10 +9,7 @@ public class Jogo {
 	public static void main(String[] args) {
 		
 		Heroi heroi = new Heroi(10, 10);
-		// Ou: Jogador j2 = new Heroi(10, 10);
-
-		Jogador monstro = new Monstro(11, 11);
-		// Ou: Monstro j1 = new Monstro(11, 11);
+		Monstro monstro = new Monstro(11, 11);
 		
 		System.out.println("Heroi:   " + heroi.x + " " + heroi.y + " " + heroi.vida);
 		System.out.println("Monstro: " + monstro.x + " " + monstro.y + " " + monstro.vida);
