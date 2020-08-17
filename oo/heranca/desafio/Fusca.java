@@ -10,6 +10,6 @@ public class Fusca extends Carro {
 	
 	public Fusca(int velocidadeMaxima) {
 		super(velocidadeMaxima);
-		super.delta = this.delta;
+		super.setDelta(this.delta);
 	}
 }

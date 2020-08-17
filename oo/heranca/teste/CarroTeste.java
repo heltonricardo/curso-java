@@ -9,11 +9,13 @@ public class CarroTeste {
 	public static void main(String[] args) {
 		
 		Carro fusca = new Fusca(100);
-		Carro laFerrari = new LaFerrari();
+		LaFerrari laFerrari = new LaFerrari();
 		
 		System.out.println("Fusca:     " + fusca + " km/h.");
 		System.out.println("LaFerrari: " + laFerrari + " km/h.");
 		System.out.println();
+		
+		laFerrari.ligarTurbo();
 		
 		fusca.acelerar();
 		laFerrari.acelerar();
