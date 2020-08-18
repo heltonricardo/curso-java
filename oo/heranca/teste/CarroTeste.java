@@ -44,5 +44,7 @@ public class CarroTeste {
 		System.out.println("Fusca:     " + fusca + " km/h.");
 		System.out.println("LaFerrari: " + laFerrari + " km/h.");
 		System.out.println();
+		
+		System.out.println("Nível do ar: " + laFerrari.nivelDoAr());
 	}
 }
