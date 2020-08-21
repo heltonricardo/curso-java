@@ -9,8 +9,7 @@ public class CriandoStreams {
 
 	public static void main(String[] args) {
 		
-		Consumer<String> print = System.out::print;
-		Consumer<Integer> println = System.out::print;
+		Consumer<Object> print = System.out::print;
 		
 		Stream<String> langs = Stream.of("Java ", "Lua ", "JS\n");	
 		langs.forEach(print);
@@ -27,6 +26,6 @@ public class CriandoStreams {
 		
 		// Ambos comentados pois são infinitos:
 		// Stream.generate(() -> "a").forEach(print);
-		// Stream.iterate(0, n -> n + 1).forEach(println);
+		// Stream.iterate(0, n -> n + 1).forEach(print);
 	}
 }
