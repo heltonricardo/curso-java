@@ -13,9 +13,9 @@ public class DesafioMap {
 		List<Integer> nums = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
 		
 		nums.stream().
-		map(DesafioUtil.binString).
-		map(DesafioUtil.inverter).
-		map(DesafioUtil.strBinary).
-		forEach(print);
+			map(DesafioUtil.binString).
+			map(DesafioUtil.inverter).
+			map(DesafioUtil.strBinary).
+			forEach(print);
 	}
 }
