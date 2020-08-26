@@ -21,10 +21,10 @@ public class DesafioFilter2 {
 		Function<Produto, String> grandePromocao = g -> g + " está em grande promoção!";
 		Consumer<String> print = System.out::println;
 		
-		produtos.stream().
-		filter(descontao).
-		filter(freteGratuito).
-		map(grandePromocao).
-		forEach(print);
+		produtos.stream()
+			.filter(descontao)
+			.filter(freteGratuito)
+			.map(grandePromocao)
+			.forEach(print);
 	}
 }
