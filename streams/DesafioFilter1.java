@@ -29,10 +29,10 @@ public class DesafioFilter1 {
 			
 		Consumer<String> print = System.out::println;
 			
-		figuras.stream().
-		filter(isTriangulo).
-		filter(isEscaleno).
-		map(descricao).
-		forEach(print);
+		figuras.stream()
+			.filter(isTriangulo)
+			.filter(isEscaleno)
+			.map(descricao)
+			.forEach(print);
 	}
 }
