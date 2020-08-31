@@ -23,9 +23,13 @@ public class ChecadaVsNaoChecada {
 	
 	/*
 	
-	
-	
-	
+	Exception
+	|
+	|--- RuntimeException
+	|    |
+	|    (Não Checadas)
+	|
+	(Checadas)
 	
 	*/
 	
@@ -39,5 +43,13 @@ public class ChecadaVsNaoChecada {
 	// Deve ser tratada dentro dessa função ou onde é chamada
 	static void geraErro2() throws Exception {
 		throw new Exception("Ocorreu um erro! #2");
+	}
+	
+	// As checadas devem ser tratadas no método que as cria ou no método que \
+	// as chama. Se nao for tratada em nenhum dos dois casos, o método que \
+	// chama deve também ter em sua assinatura que lançará uma exceção.
+	
+	static void geraErro3() throws Exception{
+		geraErro2();
 	}
 }
