@@ -21,7 +21,16 @@ public class ChecadaVsNaoChecada {
 		System.out.println("Fim");
 	}
 	
+	/*
+	
+	
+	
+	
+	
+	*/
+	
 	// Exceção não checada / não verificada -> tratanto opcional:
+	// RuntimeException ou quem herda dela será não verificado
 	static void geraErro1() {
 		throw new RuntimeException("Ocorreu um erro! #1");
 	}
