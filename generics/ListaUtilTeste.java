@@ -21,7 +21,8 @@ public class ListaUtilTeste {
 		String ultimaLinguagem2 = ListaUtil.getUltimo2(langs);
 		System.out.println(ultimaLinguagem2);
 		
-		Integer ultimoNumero2 = ListaUtil.getUltimo2(nums);
+		// Não precisa especificar:
+		Integer ultimoNumero2 = ListaUtil.<Integer>getUltimo2(nums);
 		System.out.println(ultimoNumero2);
 	}
 }
