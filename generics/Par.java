@@ -5,9 +5,8 @@ public class Par<C, V> {
 	private C chave;
 	private V Valor;
 	
-	public Par() {
-		
-	}
+	public Par() {}
+	
 	public Par(C chave, V valor) {
 		this.chave = chave;
 		Valor = valor;
@@ -20,7 +19,6 @@ public class Par<C, V> {
 		result = prime * result + ((chave == null) ? 0 : chave.hashCode());
 		return result;
 	}
-	@SuppressWarnings("rawtypes")
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -29,7 +27,7 @@ public class Par<C, V> {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Par other = (Par) obj;
+		Par<?, ?> other = (Par<?, ?>) obj;
 		if (chave == null) {
 			if (other.chave != null)
 				return false;
