@@ -1,3 +1,3 @@
-# Curso Udemy: Java 2020 COMPLETO
+# estudo-java
 
-https://www.udemy.com/course/fundamentos-de-programacao-com-java/
+Estudo de algoritmos usando linguagem Java.
