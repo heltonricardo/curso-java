@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class FabricaConexao {
 
 	public static Connection getConexao() {
-		final String url1 = "jdbc:mysql://localhost?"; 
+		final String url1 = "jdbc:mysql://localhost/CURSO_JAVA?"; 
 		final String url2 = "verifyServerCertificate=false&"; 
 		final String url3 = "useSSL=true&"; 
 		final String url4 = "useTimezone=true&serverTimezone=UTC"; 
