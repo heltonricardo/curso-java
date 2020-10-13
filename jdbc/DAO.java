@@ -52,4 +52,14 @@ public class DAO {
 		conexao = FabricaConexao.getConexao();
 		return conexao;
 	}
+	
+	public void close() {
+		try {
+			getConexao().close();
+		} catch (SQLException e) {
+		}
+		finally {
+			conexao = null;
+		}
+	}
 }
